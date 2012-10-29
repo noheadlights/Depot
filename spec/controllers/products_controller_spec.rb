@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ProductsController do
+describe ProductsController,  type: :controller do
 
 
   before :each do
