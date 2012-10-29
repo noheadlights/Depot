@@ -32,5 +32,9 @@ FactoryGirl.define do
         including Cucumber, Shoulda, Machinist, Mocha, and Rcov.      </p>}
     image_url 'rtp.jpg'
     price 34.95
+    factory :invalid_product, class: Product do
+      title ""
+    end
   end
+
 end
