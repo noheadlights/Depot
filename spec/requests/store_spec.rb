@@ -10,17 +10,17 @@ describe "Store" do
 
     it "has the title" do
       visit  root_path
-      save_and_open_page
-      response.should have_content("CoffeeScript")
-
+      within "h3" do
+        page.should have_content("CoffeeScript")
+      end
     end
     it "contains the formatted price" do
       visit  root_path
-      response.should have_selector('.price')
+      page.should have_selector('.price')
     end
     it "has the side menu" do
       visit  root_path
-      response.should have_selector("a", :minimum => 4)
+      page.should have_selector("a", :minimum => 4)
     end
 
   end
