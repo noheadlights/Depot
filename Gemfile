@@ -5,11 +5,15 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+ # gem 'pg'
+gem "pg"
 
 gem 'factory_girl_rails'
 gem 'rspec-rails'
 gem "shoulda-matchers"
+gem "capybara"
+gem 'launchy'
+gem "nokogiri"
 
 # Gems used only for assets and not required
 # in production environments by default.
